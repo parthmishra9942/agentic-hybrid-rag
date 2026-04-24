@@ -44,9 +44,10 @@ class BM25Retriever:
         scores.sort(key=lambda x: x[0], reverse=True)
         results = []
         for s, idx in scores[:top_k]:
-            rec = self.docs[idx].copy()
-            rec["bm25_score"] = s
-            results.append(rec)
+            if s > 0.0:
+                rec = self.docs[idx].copy()
+                rec["bm25_score"] = s
+                results.append(rec)
         return results
 
 class DenseVectorRetriever:
