@@ -7,6 +7,11 @@
 
 A high-performance **Agentic Retrieval-Augmented Generation (RAG)** platform designed to eliminate the dual failure modes of naive vector search: vocabulary mismatch and semantic drift. Fuses **BM25 keyword relevance** and **dense vector similarity** using **Reciprocal Rank Fusion (RRF)**, applies a **Cross-Encoder reranking pass**, and routes queries through a **self-reflective hallucination guardrail**.
 
+
+<p align="center">
+  <img src="assets/demo.gif" alt="Portfolio Showcase" width="100%" style="border-radius: 10px;">
+</p>
+
 ---
 
 ## 🏛️ End-to-End System Architecture
